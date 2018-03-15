@@ -1,0 +1,11 @@
+{
+	"media-query": {
+		"prefix": "media-query",
+		"body": [
+			"@media (min-width: ${1:600px}) {",
+  		"\u0020 $2",
+			"}"
+		],
+		"description": "Media query for responsiveness."
+	}
+}

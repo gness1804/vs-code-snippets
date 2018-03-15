@@ -1,0 +1,195 @@
+{
+	"arrow-function": {
+		"prefix": "arrow-function",
+		"body": "($1) => {$2}"
+	},
+	"assert-strict-equal-chai": {
+		"prefix": "assert-strict-equal-chai",
+		"body": "assert.strictEqual(${1:value1}, ${2:value2})"
+	},
+	"beforeEach": {
+		"prefix": "beforeEach",
+		"body": [
+			"beforeEach(() => {",
+			"",
+			"});"
+		]
+	},
+	"catch-method": {
+		"prefix": "catch-method",
+		"body": "catch(($1) => {$2})"
+	},
+	"data-vue": {
+		"prefix": "data-vue",
+		"body": [
+			"data() {",
+			"\u0020 return {};",
+			"},"
+		]
+	},
+	"describe-block-testing": {
+		"prefix": "describe-block-testing",
+		"body": [
+			"describe('${1:feature}', () => {",
+			"\u0020 $2",
+			"});"
+		]
+	},
+	"eslint-disable": {
+		"prefix": "eslint-disable",
+		"body": "/* eslint-disable */"
+	},
+	"eslint-disable-line": {
+		"prefix": "eslint-disable-line",
+		"body": "//eslint-disable-line"
+	},
+	"eslint-disable-rule": {
+		"prefix": "eslint-disable-rule",
+		"body": "/* eslint-disable ${1:rule1} */"
+	},
+	"eslint-enable": {
+		"prefix": "eslint-enable",
+		"body": "/*eslint-enable*/"
+	},
+	"export-default": {
+		"prefix": "export-default",
+		"body": "export default ${1:name}"
+	},
+	"flow": {
+		"prefix": "flow",
+		"body": "// @flow",
+		"description": "The notation for flow."
+	},
+	"for-of": {
+		"prefix": "for-of",
+		"body": [
+			"for (${1:thing} of ${2:things}) {",
+			"",
+			"}"
+		]
+	},
+	"function-es5": {
+		"prefix": "function-es5",
+		"body": [
+			"function () {}"
+		]
+	},
+	"function-es6": {
+		"prefix": "function-es6",
+		"body": [
+			"const ${1:name} = () => {",
+			"}"
+		]
+	},
+	"function-react": {
+		"prefix": "function-react",
+		"body": [
+			"${1:name} = () => {",
+			"}"
+		],
+		"description": "Method for react."
+	},
+	"function-self-invoking": {
+		"prefix": "function-self-invoking",
+		"body": [
+			"(function ($1) {",
+			"\u0020 $2",
+			"}())"
+		]
+	},
+	"it-block-testing": {
+		"prefix": "it-block-testing",
+		"body": [
+			"it('${1:does such and such}', () => {",
+			"\u0020 $2",
+			"});"
+		]
+	},
+	"local-storage-get-item": {
+		"prefix": "local-storage-get-item",
+		"body": "localStorage.getItem('${1:key}');"
+	},
+	"local-storage-set-item": {
+		"prefix": "local-storage-set-item",
+		"body": "localStorage.setItem('${1:key}', ${2:value});"
+	},
+	"log": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1:', $1)"
+		],
+		"description": "Console.log()."
+	},
+	"next-anon-component": {
+		"prefix": "next-anon-component",
+		"body": [
+			"export default (props) => (",
+			"\u0020 <div>",
+			"\u0020 \u0020 <p>I am an anonymous component at the '{props.url.pathname}' path.</p>",
+			"\u0020 </div>",
+			")"
+		]
+	},
+	"next-named-component": {
+		"prefix": "next-named-component",
+		"body": [
+			"const ${1:name} = () => (",
+			"\u0020 <div>",
+			"\u0020 \u0020 <p>I am the ${1:name} component.</p>",
+			"\u0020 </div>",
+			")",
+			"",
+			"export default ${1:name}"
+		]
+	},
+	"promise": {
+		"prefix": "promise",
+		"body": [
+			"const promise = new Promise((resolve, reject) => {",
+			"\u0020 resolve()",
+			"});",
+			"promise.then(() => {});"
+		]
+	},
+	"prop-same-name": {
+		"prefix": "prop-same-name",
+		"body": "${1:propName}={${1:propName}}"
+	},
+	"sanity-check": {
+		"prefix": "sanity-check",
+		"body": [
+			"console.log('${1:sanity check}')"
+		]
+	},
+	"set-state": {
+		"prefix": "set-state",
+		"body": "this.setState({ $1 })"
+	},
+	"style-line-react-native": {
+		"prefix": "style-line-react-native",
+		"body": "style={styles.${1:element}}"
+	},
+	"style-next": {
+		"prefix": "style-next",
+		"body": [
+			"<style jsx>{`",
+			"",
+			"`}</style>"
+		]
+	},
+	"style-vue": {
+		"prefix": "style-vue",
+		"body": [
+			"const styles = {",
+			"$1",
+			"};",
+			"",
+			"export default styles;",
+			""
+		]
+	},
+	"then-method": {
+		"prefix": "then-method",
+		"body": ".then(($1) => {$2})"
+	}
+}
