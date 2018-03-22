@@ -113,12 +113,12 @@
 		"prefix": "local-storage-set-item",
 		"body": "localStorage.setItem('${1:key}', ${2:value});"
 	},
-	"log": {
-		"prefix": "log",
+	"logjs": {
+		"prefix": "logjs",
 		"body": [
-			"console.log('$1:', $1)"
+			"console.log('$1:', $1);"
 		],
-		"description": "Console.log()."
+		"description": "Console.log() with description of output."
 	},
 	"next-anon-component": {
 		"prefix": "next-anon-component",
@@ -158,7 +158,7 @@
 	"sanity-check": {
 		"prefix": "sanity-check",
 		"body": [
-			"console.log('${1:sanity check}')"
+			"console.log('${1:sanity check}');"
 		]
 	},
 	"set-state": {
