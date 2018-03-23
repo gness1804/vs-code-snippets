@@ -159,6 +159,10 @@
 		"prefix": "prop-same-name",
 		"body": "${1:propName}={${1:propName}}"
 	},
+	"reset-history-sinon": {
+		"prefix": "reset-history-sinon",
+		"body": "${1:function}.resetHistory();"
+	},
 	"sanity-check": {
 	  "prefix": "sanity-check",
 	  "body": [
@@ -204,5 +208,4 @@
 		"prefix": "then-method",
 		"body": ".then(($1) => {$2})"
 	}
-
 }
