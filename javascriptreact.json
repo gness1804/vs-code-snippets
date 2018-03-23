@@ -51,9 +51,9 @@
 		"prefix": "eslint-enable",
 		"body": "/*eslint-enable*/"
 	},
-	"expect": {
-		"prefix": "expect",
-		"body": "expect($1)$2;"
+	"expect-test": {
+		"prefix": "expect-test",
+		"body": "expect($1).${2:toEqual}($3);"
 	},
 	"export-default": {
 		"prefix": "export-default",
