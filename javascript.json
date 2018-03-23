@@ -173,6 +173,10 @@
 		"prefix": "sinon-assert-calledOnce",
 		"body": "sinon.assert.calledOnce(${1:function});"
 	},
+	"sinon-assert-calledWith": {
+		"prefix": "sinon-assert-calledWith",
+		"body": "sinon.assert.calledWith(${1:function}, '${2:arg}');"
+	},
 	"style-line-react-native": {
 		"prefix": "style-line-react-native",
 		"body": "style={styles.${1:element}}"
