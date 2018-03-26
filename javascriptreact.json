@@ -55,6 +55,10 @@
 		"prefix": "expect-test",
 		"body": "expect($1).${2:toEqual}($3);"
 	},
+	"expect-to-match-snapshot": {
+		"prefix": "expect-to-match-snapshot",
+		"body": "expect($1).${2:toMatchSnapshot}($3);"
+	},
 	"export-default": {
 		"prefix": "export-default",
 		"body": "export default ${1:name}"
