@@ -181,6 +181,10 @@
 		"prefix": "sinon-assert-calledWith",
 		"body": "sinon.assert.calledWith(${1:function}, '${2:arg}');"
 	},
+	"sinon-assert-notCalled": {
+		"prefix": "sinon-assert-notCalled",
+		"body": "sinon.assert.notCalled(${1:function});"
+	},
 	"style-line-react-native": {
 		"prefix": "style-line-react-native",
 		"body": "style={styles.${1:element}}"
