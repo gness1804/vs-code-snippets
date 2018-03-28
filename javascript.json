@@ -105,6 +105,12 @@
 			"}())"
 		]
 	},
+	"get-express": {
+		"prefix": "get-express",
+		"body": [
+			"${1:router}.get('/${2:route}', ${3:(req, res, next) => {}});"
+		]
+	},
 	"it-block-testing": {
 		"prefix": "it-block-testing",
 		"body": [
@@ -148,6 +154,12 @@
 			")",
 			"",
 			"export default ${1:name}"
+		]
+	},
+	"post-express": {
+		"prefix": "post-express",
+		"body": [
+			"${1:router}.post('/${2:route}', ${3:(req, res, next) => {}});"
 		]
 	},
 	"promise": {
