@@ -156,6 +156,10 @@
 			"export default ${1:name}"
 		]
 	},
+	"object-assign": {
+		"prefix": "object-assign",
+		"body": "Object.assign({}, { foo: 'bar' });"
+	},
 	"post-express": {
 		"prefix": "post-express",
 		"body": [
